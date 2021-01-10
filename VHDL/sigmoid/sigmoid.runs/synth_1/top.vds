@@ -1,0 +1,758 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Jan 10 15:18:13 2021
+# Process ID: 1020
+# Current directory: C:/Users/markr/Documents/sigmoid/sigmoid.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/markr/Documents/sigmoid/sigmoid.runs/synth_1/top.vds
+# Journal file: C:/Users/markr/Documents/sigmoid/sigmoid.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19828 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 331.047 ; gain = 75.051
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/top.vhd:46]
+INFO: [Synth 8-3491] module 'clk_mod' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.runs/synth_1/.Xil/Vivado-1020-LAPTOP-MARK/realtime/clk_mod_stub.vhdl:5' bound to instance 'Uclk_mod' of component 'clk_mod' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/top.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'clk_mod' [C:/Users/markr/Documents/sigmoid/sigmoid.runs/synth_1/.Xil/Vivado-1020-LAPTOP-MARK/realtime/clk_mod_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'sigmoid' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd:35' bound to instance 'SIG' of component 'sigmoid' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/top.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'sigmoid' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd:47]
+INFO: [Synth 8-3491] module 'sigmoid_controller' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid_controller.vhd:35' bound to instance 'CONTROLLER_SIGMOID' of component 'sigmoid_controller' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'sigmoid_controller' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid_controller.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'sigmoid_controller' (1#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid_controller.vhd:53]
+INFO: [Synth 8-3491] module 'sig_left' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_left.vhd:35' bound to instance 'SIGMOID_LEFT' of component 'sig_left' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'sig_left' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_left.vhd:48]
+INFO: [Synth 8-3491] module 'dp_sig_left' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_left.vhd:35' bound to instance 'DATAPATH_SIGLEFT' of component 'dp_sig_left' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_left.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'dp_sig_left' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_left.vhd:42]
+INFO: [Synth 8-3491] module 'mux_left' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_left.vhd:35' bound to instance 'MUX_LEFT_1' of component 'mux_left' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_left.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'mux_left' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_left.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'mux_left' (2#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_left.vhd:44]
+INFO: [Synth 8-3491] module 'mux_left' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_left.vhd:35' bound to instance 'MUX_LEFT_2' of component 'mux_left' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_left.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'dp_sig_left' (3#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_left.vhd:42]
+INFO: [Synth 8-3491] module 'controller_sig_left' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_left.vhd:34' bound to instance 'CONTROLLER_SIGLEFT' of component 'controller_sig_left' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_left.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'controller_sig_left' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_left.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'controller_sig_left' (4#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_left.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'sig_left' (5#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_left.vhd:48]
+INFO: [Synth 8-3491] module 'sig_midd' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_midd.vhd:35' bound to instance 'SIGMOID_MIDDLE' of component 'sig_midd' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'sig_midd' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_midd.vhd:49]
+INFO: [Synth 8-3491] module 'dp_sig_midd' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_midd.vhd:35' bound to instance 'DATAPATH_SIGMIDD' of component 'dp_sig_midd' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_midd.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'dp_sig_midd' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_midd.vhd:46]
+INFO: [Synth 8-3491] module 'mux_midd' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_midd.vhd:35' bound to instance 'MUX_MIDD_1' of component 'mux_midd' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_midd.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'mux_midd' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_midd.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'mux_midd' (6#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_midd.vhd:45]
+INFO: [Synth 8-3491] module 'registro' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/registro.vhd:35' bound to instance 'REG_2' of component 'registro' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_midd.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'registro' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/registro.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'registro' (7#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/registro.vhd:43]
+INFO: [Synth 8-3491] module 'mux_midd' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_midd.vhd:35' bound to instance 'MUX_MIDD_2' of component 'mux_midd' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_midd.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'dp_sig_midd' (8#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_midd.vhd:46]
+INFO: [Synth 8-3491] module 'controller_sig_midd' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_midd.vhd:34' bound to instance 'CONTROLLER_SIGMIDD' of component 'controller_sig_midd' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_midd.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'controller_sig_midd' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_midd.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'controller_sig_midd' (9#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_midd.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'sig_midd' (10#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_midd.vhd:49]
+INFO: [Synth 8-3491] module 'sig_right' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_right.vhd:35' bound to instance 'SIGMOID_RIGHT' of component 'sig_right' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'sig_right' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_right.vhd:48]
+INFO: [Synth 8-3491] module 'dp_sig_right' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_right.vhd:35' bound to instance 'DATAPATH_SIGRIGHT' of component 'dp_sig_right' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_right.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'dp_sig_right' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_right.vhd:42]
+INFO: [Synth 8-3491] module 'mux_right' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_right.vhd:35' bound to instance 'MUX_RIGHT_1' of component 'mux_right' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_right.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'mux_right' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_right.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'mux_right' (11#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_right.vhd:44]
+INFO: [Synth 8-3491] module 'mux_right' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_right.vhd:35' bound to instance 'MUX_RIGHT_3' of component 'mux_right' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_right.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'dp_sig_right' (12#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_right.vhd:42]
+INFO: [Synth 8-3491] module 'controller_sig_right' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_right.vhd:34' bound to instance 'CONTROLLER_SIGRIGHT' of component 'controller_sig_right' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_right.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'controller_sig_right' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_right.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'controller_sig_right' (13#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_right.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'sig_right' (14#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_right.vhd:48]
+INFO: [Synth 8-3491] module 'configurable_multiplier' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:35' bound to instance 'CONFIG_MULTIPLIER' of component 'configurable_multiplier' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'configurable_multiplier' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:51]
+INFO: [Synth 8-3491] module 'mult_controller' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mult_controller.vhd:35' bound to instance 'CONTROLADOR' of component 'mult_controller' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'mult_controller' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mult_controller.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'mult_controller' (15#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mult_controller.vhd:45]
+INFO: [Synth 8-3491] module 'PISO_M' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PISO_M.vhd:35' bound to instance 'PISO_A' of component 'PISO_M' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'PISO_M' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PISO_M.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'PISO_M' (16#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PISO_M.vhd:43]
+INFO: [Synth 8-3491] module 'PISO_M' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PISO_M.vhd:35' bound to instance 'PISO_CA' of component 'PISO_M' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:146]
+INFO: [Synth 8-3491] module 'PIPO' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PIPO.vhd:35' bound to instance 'PIPO_B' of component 'PIPO' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'PIPO' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PIPO.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'PIPO' (17#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PIPO.vhd:44]
+INFO: [Synth 8-3491] module 'PIPO' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PIPO.vhd:35' bound to instance 'PIPO_CB' of component 'PIPO' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:161]
+INFO: [Synth 8-3491] module 'PISO_N' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PISO_N.vhd:35' bound to instance 'PISO_CB' of component 'PISO_N' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'PISO_N' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PISO_N.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'PISO_N' (18#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PISO_N.vhd:43]
+INFO: [Synth 8-3491] module 'bit4_multiplier_PEs' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/bit4_multiplier_PEs.vhd:35' bound to instance 'BIT4_MUL_PES12' of component 'bit4_multiplier_PEs' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'bit4_multiplier_PEs' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/bit4_multiplier_PEs.vhd:46]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PE.vhd:34' bound to instance 'PE3' of component 'PE' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/bit4_multiplier_PEs.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'PE' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PE.vhd:45]
+INFO: [Synth 8-3491] module 'and2' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/and2.vhd:34' bound to instance 'U_AND2' of component 'and2' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PE.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_and2' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/and2.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_and2' (19#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/and2.vhd:40]
+INFO: [Synth 8-3491] module 'xor3' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/xor3.vhd:34' bound to instance 'U_XOR3' of component 'xor3' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PE.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_xor3' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/xor3.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_xor3' (20#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/xor3.vhd:41]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/full_adder.vhd:34' bound to instance 'FA_PE' of component 'full_adder' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PE.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'full_adder' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/full_adder.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (21#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/full_adder.vhd:42]
+INFO: [Synth 8-3491] module 'FF_D' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/FF_D.vhd:34' bound to instance 'FF_D_SIN' of component 'FF_D' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PE.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'FF_D' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/FF_D.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'FF_D' (22#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/FF_D.vhd:41]
+INFO: [Synth 8-3491] module 'FF_D' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/FF_D.vhd:34' bound to instance 'FF_D_COUT' of component 'FF_D' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PE.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'PE' (23#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PE.vhd:45]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PE.vhd:34' bound to instance 'PE2' of component 'PE' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/bit4_multiplier_PEs.vhd:74]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PE.vhd:34' bound to instance 'PE1' of component 'PE' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/bit4_multiplier_PEs.vhd:84]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PE.vhd:34' bound to instance 'PE0' of component 'PE' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/bit4_multiplier_PEs.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'bit4_multiplier_PEs' (24#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/bit4_multiplier_PEs.vhd:46]
+INFO: [Synth 8-3491] module 'bit4_multiplier_PEs' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/bit4_multiplier_PEs.vhd:35' bound to instance 'BIT4_MUL_PES8' of component 'bit4_multiplier_PEs' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:186]
+INFO: [Synth 8-3491] module 'bit4_multiplier_PEs' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/bit4_multiplier_PEs.vhd:35' bound to instance 'BIT4_MUL_PES4' of component 'bit4_multiplier_PEs' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:196]
+INFO: [Synth 8-3491] module 'bit4_multiplier_PEs' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/bit4_multiplier_PEs.vhd:35' bound to instance 'BIT4_MUL_PES0' of component 'bit4_multiplier_PEs' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:206]
+INFO: [Synth 8-3491] module 'mux_select' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_select.vhd:35' bound to instance 'MUX_12' of component 'mux_select' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'mux_select' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_select.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'mux_select' (25#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_select.vhd:43]
+INFO: [Synth 8-3491] module 'mux_select' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_select.vhd:35' bound to instance 'MUX_12_CA' of component 'mux_select' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:223]
+INFO: [Synth 8-3491] module 'mux_select' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_select.vhd:35' bound to instance 'MUX_8' of component 'mux_select' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:230]
+INFO: [Synth 8-3491] module 'mux_select' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_select.vhd:35' bound to instance 'MUX_8_CA' of component 'mux_select' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:237]
+INFO: [Synth 8-3491] module 'mux_select' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_select.vhd:35' bound to instance 'MUX_4' of component 'mux_select' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:244]
+INFO: [Synth 8-3491] module 'mux_select' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_select.vhd:35' bound to instance 'MUX_4_CA' of component 'mux_select' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:251]
+INFO: [Synth 8-3491] module 'fa_block' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/fa_block.vhd:35' bound to instance 'FAs_BLOCK12' of component 'fa_block' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:258]
+INFO: [Synth 8-638] synthesizing module 'fa_block' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/fa_block.vhd:45]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/full_adder.vhd:34' bound to instance 'FA_CA' of component 'full_adder' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/fa_block.vhd:77]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/full_adder.vhd:34' bound to instance 'FA_CB' of component 'full_adder' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/fa_block.vhd:84]
+INFO: [Synth 8-3491] module 'FF_D' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/FF_D.vhd:34' bound to instance 'FF_D_CA' of component 'FF_D' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/fa_block.vhd:91]
+INFO: [Synth 8-3491] module 'FF_D' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/FF_D.vhd:34' bound to instance 'FF_D_CB' of component 'FF_D' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/fa_block.vhd:97]
+INFO: [Synth 8-3491] module 'SIPO' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/SIPO.vhd:35' bound to instance 'SIPO_Q' of component 'SIPO' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/fa_block.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'SIPO' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/SIPO.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'SIPO' (26#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/SIPO.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'fa_block' (27#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/fa_block.vhd:45]
+INFO: [Synth 8-3491] module 'fa_block' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/fa_block.vhd:35' bound to instance 'FAs_BLOCK8' of component 'fa_block' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:267]
+INFO: [Synth 8-3491] module 'fa_block' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/fa_block.vhd:35' bound to instance 'FAs_BLOCK4' of component 'fa_block' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:276]
+INFO: [Synth 8-3491] module 'fa_block' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/fa_block.vhd:35' bound to instance 'FAs_BLOCK0' of component 'fa_block' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:285]
+INFO: [Synth 8-256] done synthesizing module 'configurable_multiplier' (28#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd:51]
+INFO: [Synth 8-3491] module 'sig_mux' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_mux.vhd:35' bound to instance 'MUX_MULT' of component 'sig_mux' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'sig_mux' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_mux.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'sig_mux' (29#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_mux.vhd:43]
+INFO: [Synth 8-3491] module 'sig_mux' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_mux.vhd:35' bound to instance 'MUX_SUM' of component 'sig_mux' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd:246]
+INFO: [Synth 8-3491] module 'sig_mux_2' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_mux_2.vhd:34' bound to instance 'MUX_START_MULT' of component 'sig_mux_2' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd:253]
+INFO: [Synth 8-638] synthesizing module 'sig_mux_2' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_mux_2.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'sig_mux_2' (30#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_mux_2.vhd:42]
+INFO: [Synth 8-3491] module 'sig_mux_2' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_mux_2.vhd:34' bound to instance 'MUX_LOAD_REGISTER' of component 'sig_mux_2' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd:260]
+INFO: [Synth 8-3491] module 'registro' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/registro.vhd:35' bound to instance 'REG_1' of component 'registro' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd:267]
+INFO: [Synth 8-256] done synthesizing module 'sigmoid' (31#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd:47]
+INFO: [Synth 8-3491] module 'shifter_in' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/shifter_in.vhd:35' bound to instance 'SIN' of component 'shifter_in' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/top.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'shifter_in' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/shifter_in.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'shifter_in' (32#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/shifter_in.vhd:42]
+INFO: [Synth 8-3491] module 'shifter_out' declared at 'C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/shifter_out.vhd:35' bound to instance 'SOUT' of component 'shifter_out' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/top.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'shifter_out' [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/shifter_out.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'shifter_out' (33#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/shifter_out.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'top' (34#1) [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/top.vhd:46]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 371.379 ; gain = 115.383
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 371.379 ; gain = 115.383
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/markr/Documents/sigmoid/sigmoid.runs/synth_1/.Xil/Vivado-1020-LAPTOP-MARK/dcp3/clk_mod_in_context.xdc] for cell 'Uclk_mod'
+Finished Parsing XDC File [C:/Users/markr/Documents/sigmoid/sigmoid.runs/synth_1/.Xil/Vivado-1020-LAPTOP-MARK/dcp3/clk_mod_in_context.xdc] for cell 'Uclk_mod'
+Parsing XDC File [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/constrs_1/imports/Vivado_TFG/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/constrs_1/imports/Vivado_TFG/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/constrs_1/imports/Vivado_TFG/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 687.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/markr/Documents/sigmoid/sigmoid.runs/synth_1/.Xil/Vivado-1020-LAPTOP-MARK/dcp3/clk_mod_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/markr/Documents/sigmoid/sigmoid.runs/synth_1/.Xil/Vivado-1020-LAPTOP-MARK/dcp3/clk_mod_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for Uclk_mod. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'sigmoid_controller'
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid_controller.vhd:64]
+INFO: [Synth 8-5544] ROM "sig_ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'controller_sig_left'
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_left.vhd:55]
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'controller_sig_midd'
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_midd.vhd:55]
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'controller_sig_right'
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_right.vhd:55]
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "done_pipo" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid_controller.vhd:64]
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid_controller.vhd:64]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                   check |                              001 |                              001
+                    left |                              010 |                              010
+                   right |                              011 |                              011
+                  middle |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'sigmoid_controller'
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid_controller.vhd:64]
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_left.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_left.vhd:55]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     e1a |                             0000 |                             0000
+                     e1b |                             0001 |                             0001
+                     e2a |                             0010 |                             0010
+                     e2b |                             0011 |                             0011
+                     e3a |                             0100 |                             0100
+                     e3b |                             0101 |                             0101
+                     e4a |                             0110 |                             0110
+                     e4b |                             0111 |                             0111
+                     e5a |                             1000 |                             1000
+                     e5b |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'controller_sig_left'
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_left.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_midd.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_midd.vhd:55]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     e1a |                             0000 |                             0000
+                     e1b |                             0001 |                             0001
+                     e2a |                             0010 |                             0010
+                     e2b |                             0011 |                             0011
+                     e3a |                             0100 |                             0100
+                     e3b |                             0101 |                             0101
+                     e4a |                             0110 |                             0110
+                     e4b |                             0111 |                             0111
+                     e5a |                             1000 |                             1000
+                     e5b |                             1001 |                             1001
+                     e6a |                             1010 |                             1010
+                     e6b |                             1011 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'controller_sig_midd'
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_midd.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_right.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_right.vhd:55]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     e1a |                             0000 |                             0000
+                     e1b |                             0001 |                             0001
+                     e2a |                             0010 |                             0010
+                     e2b |                             0011 |                             0011
+                     e3a |                             0100 |                             0100
+                     e3b |                             0101 |                             0101
+                     e4a |                             0110 |                             0110
+                     e4b |                             0111 |                             0111
+                     e5a |                             1000 |                             1000
+                     e5b |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'controller_sig_right'
+WARNING: [Synth 8-6014] Unused sequential element state_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_right.vhd:55]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 40    
++---Registers : 
+	               29 Bit    Registers := 1     
+	               21 Bit    Registers := 4     
+	               13 Bit    Registers := 5     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 41    
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 13    
+	   5 Input     13 Bit        Muxes := 1     
+	   4 Input     13 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 3     
+	  26 Input      4 Bit        Muxes := 2     
+	  31 Input      4 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 3     
+	  10 Input      3 Bit        Muxes := 2     
+	  12 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 24    
+	   5 Input      1 Bit        Muxes := 5     
+	  10 Input      1 Bit        Muxes := 6     
+	  12 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sigmoid_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 6     
+	   5 Input     13 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 5     
+Module mux_left 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+Module controller_sig_left 
+Detailed RTL Component Info : 
++---Muxes : 
+	  26 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 3     
+Module registro 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
+Module controller_sig_midd 
+Detailed RTL Component Info : 
++---Muxes : 
+	  31 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 3     
+Module mux_right 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+Module controller_sig_right 
+Detailed RTL Component Info : 
++---Muxes : 
+	  26 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 3     
+Module mult_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 9     
+Module PISO_M 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+Module PIPO 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module PISO_N 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module xil_defaultlib_xor3 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module full_adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module FF_D 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module mux_select 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module SIPO 
+Detailed RTL Component Info : 
++---Registers : 
+	               21 Bit    Registers := 1     
+Module sig_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     13 Bit        Muxes := 1     
+Module sig_mux_2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module sigmoid 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+Module shifter_in 
+Detailed RTL Component Info : 
++---Registers : 
+	               29 Bit    Registers := 1     
+Module shifter_out 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element SIG/CONFIG_MULTIPLIER/FAs_BLOCK12/SIPO_Q/q_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/SIPO.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element SIG/CONFIG_MULTIPLIER/FAs_BLOCK8/SIPO_Q/q_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/SIPO.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element SIG/CONFIG_MULTIPLIER/FAs_BLOCK4/SIPO_Q/q_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/SIPO.vhd:55]
+INFO: [Synth 8-5546] ROM "SIG/CONFIG_MULTIPLIER/CONTROLADOR/done_pipo" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element SIG/CONFIG_MULTIPLIER/CONTROLADOR/n_reg_reg was removed.  [C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mult_controller.vhd:56]
+WARNING: [Synth 8-3332] Sequential element (SIG/CONFIG_MULTIPLIER/FAs_BLOCK0/SIPO_Q/q_reg_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (SIG/CONFIG_MULTIPLIER/FAs_BLOCK0/SIPO_Q/q_reg_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (SIG/CONFIG_MULTIPLIER/FAs_BLOCK0/SIPO_Q/q_reg_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (SIG/CONFIG_MULTIPLIER/FAs_BLOCK0/SIPO_Q/q_reg_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (SIG/CONFIG_MULTIPLIER/FAs_BLOCK0/SIPO_Q/q_reg_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (SIG/CONFIG_MULTIPLIER/FAs_BLOCK12/FF_D_CA/q_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (SIG/CONFIG_MULTIPLIER/FAs_BLOCK12/FF_D_CB/q_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (SIG/CONFIG_MULTIPLIER/FAs_BLOCK8/FF_D_CA/q_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (SIG/CONFIG_MULTIPLIER/FAs_BLOCK8/FF_D_CB/q_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (SIG/CONFIG_MULTIPLIER/FAs_BLOCK4/FF_D_CA/q_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (SIG/CONFIG_MULTIPLIER/FAs_BLOCK4/FF_D_CB/q_reg) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Uclk_mod/clk_out1' to pin 'Uclk_mod/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | SIG/CONFIG_MULTIPLIER/FAs_BLOCK0/SIPO_Q/q_reg_reg[17] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+-------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_mod       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |clk_mod_bbox |     1|
+|2     |CARRY4       |     4|
+|3     |LUT1         |     1|
+|4     |LUT2         |    28|
+|5     |LUT3         |    33|
+|6     |LUT4         |    31|
+|7     |LUT5         |    50|
+|8     |LUT6         |   130|
+|9     |SRL16E       |     1|
+|10    |FDRE         |   202|
+|11    |IBUF         |     6|
+|12    |OBUF         |     2|
++------+-------------+------+
+
+Report Instance Areas: 
++------+--------------------------+------------------------+------+
+|      |Instance                  |Module                  |Cells |
++------+--------------------------+------------------------+------+
+|1     |top                       |                        |   490|
+|2     |  SIG                     |sigmoid                 |   416|
+|3     |    CONFIG_MULTIPLIER     |configurable_multiplier |   192|
+|4     |      BIT4_MUL_PES0       |bit4_multiplier_PEs     |    17|
+|5     |        PE0               |PE_42                   |     5|
+|6     |          FF_D_COUT       |FF_D_52                 |     2|
+|7     |          FF_D_SIN        |FF_D_53                 |     3|
+|8     |        PE1               |PE_43                   |     4|
+|9     |          FF_D_COUT       |FF_D_50                 |     1|
+|10    |          FF_D_SIN        |FF_D_51                 |     3|
+|11    |        PE2               |PE_44                   |     4|
+|12    |          FF_D_COUT       |FF_D_48                 |     1|
+|13    |          FF_D_SIN        |FF_D_49                 |     3|
+|14    |        PE3               |PE_45                   |     4|
+|15    |          FF_D_COUT       |FF_D_46                 |     1|
+|16    |          FF_D_SIN        |FF_D_47                 |     3|
+|17    |      BIT4_MUL_PES12      |bit4_multiplier_PEs_1   |    16|
+|18    |        PE0               |PE_30                   |     4|
+|19    |          FF_D_COUT       |FF_D_40                 |     1|
+|20    |          FF_D_SIN        |FF_D_41                 |     3|
+|21    |        PE1               |PE_31                   |     4|
+|22    |          FF_D_COUT       |FF_D_38                 |     1|
+|23    |          FF_D_SIN        |FF_D_39                 |     3|
+|24    |        PE2               |PE_32                   |     4|
+|25    |          FF_D_COUT       |FF_D_36                 |     1|
+|26    |          FF_D_SIN        |FF_D_37                 |     3|
+|27    |        PE3               |PE_33                   |     4|
+|28    |          FF_D_COUT       |FF_D_34                 |     1|
+|29    |          FF_D_SIN        |FF_D_35                 |     3|
+|30    |      BIT4_MUL_PES4       |bit4_multiplier_PEs_2   |    16|
+|31    |        PE0               |PE_18                   |     4|
+|32    |          FF_D_COUT       |FF_D_28                 |     1|
+|33    |          FF_D_SIN        |FF_D_29                 |     3|
+|34    |        PE1               |PE_19                   |     4|
+|35    |          FF_D_COUT       |FF_D_26                 |     1|
+|36    |          FF_D_SIN        |FF_D_27                 |     3|
+|37    |        PE2               |PE_20                   |     4|
+|38    |          FF_D_COUT       |FF_D_24                 |     1|
+|39    |          FF_D_SIN        |FF_D_25                 |     3|
+|40    |        PE3               |PE_21                   |     4|
+|41    |          FF_D_COUT       |FF_D_22                 |     1|
+|42    |          FF_D_SIN        |FF_D_23                 |     3|
+|43    |      BIT4_MUL_PES8       |bit4_multiplier_PEs_3   |    16|
+|44    |        PE0               |PE                      |     4|
+|45    |          FF_D_COUT       |FF_D_16                 |     1|
+|46    |          FF_D_SIN        |FF_D_17                 |     3|
+|47    |        PE1               |PE_7                    |     4|
+|48    |          FF_D_COUT       |FF_D_14                 |     1|
+|49    |          FF_D_SIN        |FF_D_15                 |     3|
+|50    |        PE2               |PE_8                    |     4|
+|51    |          FF_D_COUT       |FF_D_12                 |     1|
+|52    |          FF_D_SIN        |FF_D_13                 |     3|
+|53    |        PE3               |PE_9                    |     4|
+|54    |          FF_D_COUT       |FF_D_10                 |     1|
+|55    |          FF_D_SIN        |FF_D_11                 |     3|
+|56    |      CONTROLADOR         |mult_controller         |    31|
+|57    |      FAs_BLOCK0          |fa_block                |    25|
+|58    |        FF_D_CA           |FF_D                    |     3|
+|59    |        FF_D_CB           |FF_D_6                  |     1|
+|60    |        SIPO_Q            |SIPO                    |    21|
+|61    |      PIPO_B              |PIPO                    |    10|
+|62    |      PIPO_CB             |PIPO_4                  |     8|
+|63    |      PISO_A              |PISO_M                  |    13|
+|64    |      PISO_CA             |PISO_M_5                |    25|
+|65    |      PISO_CB             |PISO_N                  |    15|
+|66    |    CONTROLLER_SIGMOID    |sigmoid_controller      |    92|
+|67    |    REG_1                 |registro                |    14|
+|68    |    SIGMOID_LEFT          |sig_left                |    29|
+|69    |      CONTROLLER_SIGLEFT  |controller_sig_left     |    29|
+|70    |    SIGMOID_MIDDLE        |sig_midd                |    57|
+|71    |      CONTROLLER_SIGMIDD  |controller_sig_midd     |    44|
+|72    |      DATAPATH_SIGMIDD    |dp_sig_midd             |    13|
+|73    |        REG_2             |registro_0              |    13|
+|74    |    SIGMOID_RIGHT         |sig_right               |    28|
+|75    |      CONTROLLER_SIGRIGHT |controller_sig_right    |    28|
+|76    |  SIN                     |shifter_in              |    38|
+|77    |  SOUT                    |shifter_out             |    26|
++------+--------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 687.367 ; gain = 431.371
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 687.367 ; gain = 115.383
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 687.367 ; gain = 431.371
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+186 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 687.367 ; gain = 440.129
+INFO: [Common 17-1381] The checkpoint 'C:/Users/markr/Documents/sigmoid/sigmoid.runs/synth_1/top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 687.367 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 10 15:18:47 2021...

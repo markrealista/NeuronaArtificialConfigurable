@@ -1,0 +1,1 @@
+clk_mod_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../configurable_multiplier.srcs/sources_1/ip/clk_mod/clk_mod_sim_netlist.vhdl,incdir="../../../../configurable_multiplier.srcs/sources_1/ip/clk_mod"

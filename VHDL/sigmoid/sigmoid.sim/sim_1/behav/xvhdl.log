@@ -1,0 +1,66 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/FF_D.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FF_D
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/package_CM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PIPO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PIPO
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PISO_M.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PISO_M
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/PISO_N.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PISO_N
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/SIPO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SIPO
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/and2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/bit4_multiplier_PEs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity bit4_multiplier_PEs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/configurable_multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity configurable_multiplier
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_left.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity controller_sig_left
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_midd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity controller_sig_midd
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/controller_sig_right.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity controller_sig_right
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/package_sigmoid.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_left.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dp_sig_left
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_midd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dp_sig_midd
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/dp_sig_right.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dp_sig_right
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/fa_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fa_block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/full_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity full_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mult_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mult_controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_left.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux_left
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_midd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux_midd
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_right.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux_right
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/mux_select.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux_select
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/registro.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity registro
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_left.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sig_left
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_midd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sig_midd
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sig_mux
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_mux_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sig_mux_2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sig_right.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sig_right
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sigmoid
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/sigmoid_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sigmoid_controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sources_1/imports/new/xor3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity xor3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/markr/Documents/sigmoid/sigmoid.srcs/sim_1/imports/new/sigmoid_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sigmoid_tb
