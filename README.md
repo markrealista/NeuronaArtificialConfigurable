@@ -10,7 +10,7 @@ _Trabajo de Fin de Grado realizado para el Grado en Ingeniería de Tecnologías 
 
 ## Resumen
 
-Este Trabajo de Fin de grado se enmarca en el ámbito de la Inteligencia Artificial y el Aprendizaje Automático. En concreto, este TFG plantea el diseño, el desarrollo y la implementación de una neurona artificial (elemento básico de una red neuronal artificial) buscando enfocar dicha neurona hacia la configurabilidad entre precisión y latencia. Para ello, los pasos que se han seguido son los siguientes: 
+Este Trabajo de Fin de grado se enmarca en el ámbito de la Inteligencia Artificial y el Aprendizaje Automático. En concreto, este TFG plantea el diseño, el desarrollo y la implementación de una neurona artificial (elemento básico de una red neuronal artificial) buscando enfocar dicha neurona hacia la configurabilidad entre precisión y latencia. Para lograr este objetivo se han realizado las siguientes tareas:
 
 En primer lugar, se ha realizado un estudio de la literatura existente, poniendo un énfasis especial en la búsqueda de multiplicadores configurables y de métodos de implementación de funciones de activación.
 
