@@ -1,1 +1,1 @@
-# NeuronaArtificialConfigurable
+# NeuronaArtificial
