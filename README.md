@@ -1,6 +1,6 @@
 # Diseño e implementación sobre FPGA de una neurona artificial configurable
 
-_Trabajo de Fin de Grado realizado para el Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación de la Uiversidad Politécnica de Madrid._
+_Trabajo de Fin de Grado realizado para el Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación de la Universidad Politécnica de Madrid._
 
 **AUTOR:** Mark Realista Quiocho
 
